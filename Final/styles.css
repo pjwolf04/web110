@@ -1,0 +1,182 @@
+/* 
+  Parker Story 7/21/2025
+
+
+/* Base Reset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.5em;
+  font-size: 1em;
+  background-color: #fafafa;
+  color: #222;
+}
+
+/* Wrapper: centered, max width */
+#wrapper {
+  max-width: 900px;
+  margin: 1em auto;
+  padding: 0 1em;
+  box-sizing: border-box;
+}
+
+/* Header styling */
+.site-header {
+  background-color: #004080;
+  color: white;
+  padding: 0.8em 0;
+  text-align: center;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+/* Main Navigation */
+.main-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0.5em 0 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+}
+
+.main-nav li {
+  display: inline-block;
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.3em 0.8em;
+  border-radius: 0.3em;
+  transition: background-color 0.3s ease;
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+  background-color: #0066cc;
+  outline: none;
+}
+
+/* Footer Navigation */
+.footer-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0.5em 0 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+}
+
+.footer-nav li {
+  display: inline-block;
+}
+
+.footer-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.3em 0.8em;
+  border-radius: 0.3em;
+  transition: background-color 0.3s ease;
+}
+
+.footer-nav a:hover,
+.footer-nav a:focus {
+  background-color: #0066cc;
+  outline: none;
+}
+
+
+/* Main content and sections */
+#main-content {
+  margin-top: 1.5em;
+}
+
+.content-box {
+  background: white;
+  border:4x solid #ddd;
+  padding: 2em 1.2em;
+  margin-bottom: 2em;
+  border-radius: 9px;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.05);
+}
+.two {
+  column-count: 2;
+  height: 330px;
+  overflow: auto;  /* prevents content leaking out */
+
+}
+
+.zero {
+  column-count:0; 
+}
+
+/* Formula list (ul) */
+.formula-list {
+  padding-left: 1.2em;
+}
+
+.formula-list li {
+  margin-bottom: 0.8em;
+}
+
+/* Top drivers horizontal list */
+#top-drivers .drivers-list {
+ 
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5em;
+  flex-wrap: wrap;
+}
+
+#top-drivers .drivers-list li {
+  background: #e0f0ff;
+  padding: 1em;
+  border-radius: 8px;
+  text-align: center;
+  flex: 1 1 30%;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  margin-bottom: 1em;
+}
+
+#top-drivers .drivers-list h2 {
+  font-size: 1.25em;
+  margin-bottom: 0.4em;
+}
+
+#top-drivers .drivers-list p {
+  font-size: 0.9em;
+  margin-bottom: 0.8em;
+  color: #333;
+}
+
+#top-drivers .drivers-list img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+/* Paragraph styling */
+p {
+  margin: 1.2 0;
+}
+
+/* Responsive stacking for narrow screens */
+@media (max-width: 700px) {
+  #top-drivers .drivers-list {
+    flex-direction: column;
+  }
+
+  #top-drivers .drivers-list li {
+    flex: 1 1 100%;
+  }
+}

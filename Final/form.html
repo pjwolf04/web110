@@ -1,0 +1,87 @@
+<!-- Parker Story 7/22/2025 Form Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <title>Website Feedback Form</title>
+  <link rel="stylesheet" href="form.css" >
+</head>
+<body>
+  <div id="wrapper">
+    <header class="site-header">
+      <h1>Website Feedback</h1>
+      <nav class="main-nav" id="main-nav">
+        <ul class="nav-list">
+          <li><a href="formula.html">Home</a></li>
+          <li><a href="form.html">Form</a></li>
+          <li><a href="credits.html">Credits</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <form method="post" action="https://webdevbasics.net/scripts/demo.php" class="feedback-form">
+        <h2 class="form-heading">Tell Us Your Thoughts</h2>
+
+        <div class="form-group">
+          <label for="name" class="form-label">Your Name:</label>
+          <input type="text" id="name" name="name" class="form-input" required >
+        </div>
+
+        <div class="form-group">
+          <label for="date" class="form-label">Current Date:</label>
+          <input type="date" id="date" name="current_date" class="form-input" >
+        </div>
+
+        <div class="form-group">
+          <label for="range" class="form-label">Rate This Website (1-5):</label>
+          <select id="range" name="range" class="form-input">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="comments" class="form-label">Additional Comments:</label>
+          <textarea id="comments" name="comments" rows="4" cols="40" class="form-textarea"></textarea>
+        </div>
+
+        <div class="form-group">
+          <input type="checkbox" id="is-good" name="is_good" value="yes" >
+          <label for="is-good">Is this website good?</label>
+        </div>
+
+        <fieldset class="form-group">
+          <legend>Preferred Contact Method:</legend>
+          <input type="radio" id="contact-email" name="contact_method" value="email" checked >
+          <label for="contact-email">Email</label>
+
+          <input type="radio" id="contact-phone" name="contact_method" value="phone" >
+          <label for="contact-phone">Phone</label>
+        </fieldset>
+
+        <div class="form-actions">
+          <input type="submit" value="Submit" class="form-button submit-button" >
+          <input type="reset" value="Reset" class="form-button reset-button" >
+        </div>
+      </form>
+    </main>
+
+    <footer class="site-header">
+      <p>&copy; 2025 Parker Story
+         <a href="mailto:pstory@stumail.jccc.edu">Contact Me</a>
+      </p>
+      <nav class="footer-nav" id="footer-nav">
+        <ul class="nav-list">
+          <li><a href="formula.html">Home</a></li>
+          <li><a href="credits.html">Credits</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </div>
+</body>
+</html>

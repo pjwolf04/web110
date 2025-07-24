@@ -1,0 +1,187 @@
+/* Parker Story 7/22/2025 */
+/* form.css  Styling for Feedback Form */
+
+/* Base Reset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #222;
+  line-height: 1.6;
+}
+
+#wrapper {
+  max-width: 900px;
+  margin: 1em auto;
+  padding: 1em;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+/* Header */
+.site-header {
+  background-color: #004080;
+  color: white;
+  padding: 1em;
+  text-align: center;
+  border-radius: 6px 6px 0 0;
+}
+
+.site-header h1 {
+  margin: 0;
+}
+
+.main-nav .nav-list {
+  list-style: none;
+  margin: 0.5em 0 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+}
+
+.main-nav .nav-list li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.4em 0.8em;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.main-nav .nav-list li a:hover {
+  background-color: #0066cc;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #004080;
+  color: white;
+  padding: 1em;
+  text-align: center;
+  border-radius: 0 0 6px 6px;
+}
+
+.site-footer h2,
+.site-footer h3 {
+  margin: 0.5em 0;
+}
+
+.footer-nav .nav-list {
+  list-style: none;
+  margin: 0.5em 0 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+}
+
+.footer-nav .nav-list li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.4em 0.8em;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.footer-nav .nav-list li a:hover {
+  background-color: #0066cc;
+}
+
+/* Form Styling */
+.feedback-form {
+  margin-top: 2em;
+}
+
+.form-heading {
+  text-align: center;
+  font-size: 1.6em;
+  margin-bottom: 1em;
+  color: #004080;
+}
+
+.form-group {
+  margin-bottom: 1.2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  margin-bottom: 0.4em;
+  font-weight: bold;
+}
+
+.form-input,
+.form-textarea,
+.feedback-form select {
+  font-size: 1em;
+  padding: 0.6em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-textarea {
+  resize: vertical;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 1.5em;
+}
+
+.form-button {
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button {
+  background-color: #004080;
+  color: white;
+}
+
+.submit-button:hover {
+  background-color: #0066cc;
+}
+
+.reset-button {
+  background-color: #ddd;
+  color: #222;
+}
+
+.reset-button:hover {
+  background-color: #bbb;
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 2em;
+  padding-top: 1em;
+  border-top: 1px solid #ddd;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .main-nav .nav-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .form-button {
+    width: 100%;
+  }
+}
